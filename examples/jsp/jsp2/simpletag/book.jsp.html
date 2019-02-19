@@ -1,0 +1,42 @@
+
+
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title>JSP 2.0 Examples - Book SimpleTag Handler</title>
+  </head>
+  <body>
+    <h1>JSP 2.0 Examples - Book SimpleTag Handler</h1>
+    <hr>
+    <p>Illustrates a semi-realistic use of SimpleTag and the Expression
+    Language.  First, a &lt;my:findBook&gt; tag is invoked to populate
+    the page context with a BookBean.  Then, the books fields are printed
+    in all caps.</p>
+    <br>
+    <b><u>Result:</u></b><br>
+    
+    <table border="1">
+        <thead>
+        <td><b>Field</b></td>
+        <td><b>Value</b></td>
+        <td><b>Capitalized</b></td>
+    </thead>
+    <tr>
+        <td>Title</td>
+        <td>The Lord of the Rings</td>
+        <td>THE LORD OF THE RINGS</td>
+    </tr>
+    <tr>
+        <td>Author</td>
+        <td>J. R. R. Tolkein</td>
+        <td>J. R. R. TOLKEIN</td>
+    </tr>
+    <tr>
+        <td>ISBN</td>
+        <td>0618002251</td>
+        <td>0618002251</td>
+    </tr>
+    </table>
+  </body>
+</html>

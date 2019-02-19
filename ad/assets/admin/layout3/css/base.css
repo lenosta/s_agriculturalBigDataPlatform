@@ -1,0 +1,116 @@
+@charset "utf-8";
+html{font-family:"Microsoft YaHei"}
+html,body{width:100%;height:100%;font-family:"Microsoft YaHei"}
+h1,h2,h3,h4,h5,i,b,s{font-weight:normal;font-style:normal}
+html,body,p,ul,li,h1,h2,h3,h4,h5,span,a{margin:0;padding:0}
+a{color:#333; cursor:pointer;}
+a:hover {text-decoration:none;color:#F00;text-decoration:underline}
+img{border:0}
+input,textarea,a{outline:none;border:none}
+img{border:none}
+li{list-style:none}
+.container{width:960px}
+.pull-left{float:left}
+.pull-right{float:right}
+.clear{	clear:both;overflow:hidden}
+.text-center{text-align:center}
+.text-left{text-align:left}
+.text-right{text-align:right}
+.icon{display:inline-block;background-image:url("../img/icon.png.html"); background-repeat: no-repeat;}
+/*红色电话*/
+.icon-tel-red{background-position:0 0;width:26px;height:26px}
+/*红色信封*/
+.icon-email-red{background-position:-34px 0;width:27px;height:22px}
+/*红色信封*/
+.icon-box-red{background-position:-73px 0;width:26px;height:26px}
+/*红色手机*/
+.icon-iphone-red{background-position:1px -53px;width:12px;height:13px;margin-top:15px}
+/*红色传真*/
+.icon-Fax-red{background-position:-22px -53px;width:12px;height:13px;margin-top:15px}
+/*红色指针*/
+.icon-Pointer-red{background-position:-44px -53px;width:10px;height:12px;margin-top:14px}
+/*红色Emain*/
+.icon-Email-red{background-position:-64px -53px;width:12px;height:9px;margin-top:15px}
+/*红色下载*/
+.icon-down-red{background-position:-86px -55px;width:13px;height:9px;margin-top:5px}
+/*红色三角*/
+.icon-triangle-red{background-position:-116px -4px;width:5px;height:8px;margin-top:8px}
+/*灰色文件夹*/
+.icon-file-grey{background-position:0 -85px;width:22px;height:19px;margin-top:0px}
+/*红色文件夹*/
+.icon-file-red{background-position:0 -108px;width:22px;height:19px;margin-top:0px}
+/*白色的window图标*/
+.icon-window-grey{background-position:0 -575px;width:46px;height:42px;margin-top:18px}
+/*白色的andrioid图标*/
+.icon-andrioid-grey{background-position:-54px -570px;width:44px;height:48px;margin-top:16px}
+/*白色的iphone图标*/
+.icon-iphone-grey{background-position:-105px -575px;width:42px;height:48px;margin-top:12px}
+/*黑点图标*/
+.icon-dot-black{background-position:-145px -54px;width:5px;height:5px;margin-top:0px}
+/*红色图片图标*/
+.icon-img-red{background-position:-106px -54px;width:13px;height:11px; margin-top:5px;}
+/*红色radio图标*/
+.icon-radio-red{background-position:-125px -54px;width:13px;height:11px; margin-top:5px;}
+/*红色tel图标*/
+.icon-tel1-red{background-position:-160px -53px;width:13px;height:13px;  margin-top:14px;}
+
+/*左侧导航*/
+
+
+.asideNavList h2 {height:40px;line-height:40px;background:#e60000;color:#fff;font-size:16px;padding:0 20px;	}
+.leftNav{margin-bottom:20px; overflow:hidden;}
+.leftNav li{height:50px; margin-top:-1px;border-top:1px solid #EDEDED;background:#fff;text-align:left;font-size:16px;line-height:50px;}
+.leftNav a{ display:block; padding-left:20px;color:#333;text-decoration:none; z-index:1;position: relative; }
+.leftNav a:hover{ color:#fff;}
+.leftNav li.current{ background:#e60000;}
+.leftNav li.current a,.leftNav li.current a:hover{color:#fff}
+
+.columntext a:link{color:#fff;}
+.columntext a:hover {color:#fff;} 
+/*联系我们*/
+.contact-tip{height:240px}
+.contact-tip h2{font-size:16px;line-height:38px;text-align:left;color:#e60000;border-bottom:1px solid #c8c8c8;background:#fff}
+.contact-tip h2 span{display:block;	width:100px;text-align:center;border-bottom:1px solid #e60000;position:relative;bottom:-1px}
+.contactList li{line-height:38px;text-align:left;font-size:12px;line-height:38px;border-bottom:1px solid #ededed;padding:0 15px;clear:both;overflow:hidden;background:#fff}
+.contactList li p{width:130px;padding-left:20px; float:left}
+.contactList li .address{line-height:16px;padding:5px 0 5px 20px}
+/*内容盒子*/
+.container-warp{background:#f2f2f2;text-align:center;width:100%}
+.container-nr{width:960px;margin:0 auto }
+/*当前位置*/
+
+.Status{font-size:12px;line-height:50px;color:#666666}
+.Status span{color:#000}
+
+
+.leftNav li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e60000;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transform: scale3d(0.7, 1, 1);
+    transform: scale3d(0.7, 1, 1);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.leftNav li a:hover::before {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.leftNav .current a::before{
+ background: none;
+
+}

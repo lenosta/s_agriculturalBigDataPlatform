@@ -1,0 +1,76 @@
+
+
+
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title>JSP 2.0 Expression Language - Implicit Objects</title>
+  </head>
+  <body>
+    <h1>JSP 2.0 Expression Language - Implicit Objects</h1>
+    <hr>
+    This example illustrates some of the implicit objects available
+    in the Expression Language.  The following implicit objects are
+    available (not all illustrated here):
+    <ul>
+      <li>pageContext - the PageContext object</li>
+      <li>pageScope - a Map that maps page-scoped attribute names to
+          their values</li>
+      <li>requestScope - a Map that maps request-scoped attribute names
+          to their values</li>
+      <li>sessionScope - a Map that maps session-scoped attribute names
+          to their values</li>
+      <li>applicationScope - a Map that maps application-scoped attribute
+          names to their values</li>
+      <li>param - a Map that maps parameter names to a single String
+          parameter value</li>
+      <li>paramValues - a Map that maps parameter names to a String[] of
+          all values for that parameter</li>
+      <li>header - a Map that maps header names to a single String
+          header value</li>
+      <li>headerValues - a Map that maps header names to a String[] of
+          all values for that header</li>
+      <li>initParam - a Map that maps context initialization parameter
+          names to their String parameter value</li>
+      <li>cookie - a Map that maps cookie names to a single Cookie object.</li>
+    </ul>
+
+    <blockquote>
+      <u><b>Change Parameter</b></u>
+      <form action="implicit-objects.jsp.html" method="GET">
+          foo = <input type="text" name="foo" value="bar">
+          <input type="submit">
+      </form>
+      <br>
+      <code>
+        <table border="1">
+          <thead>
+            <td><b>EL Expression</b></td>
+            <td><b>Result</b></td>
+          </thead>
+          <tr>
+            <td>${param.foo}</td>
+            <td>bar&nbsp;</td>
+          </tr>
+          <tr>
+            <td>${param["foo"]}</td>
+            <td>bar&nbsp;</td>
+          </tr>
+          <tr>
+            <td>${header["host"]}</td>
+            <td>202.106.10.250:8970&nbsp;</td>
+          </tr>
+          <tr>
+            <td>${header["accept"]}</td>
+            <td>text/html,*/*;q=0.8&nbsp;</td>
+          </tr>
+          <tr>
+            <td>${header["user-agent"]}</td>
+            <td>SiteSucker for macOS/2.11.8&nbsp;</td>
+          </tr>
+        </table>
+      </code>
+    </blockquote>
+  </body>
+</html>

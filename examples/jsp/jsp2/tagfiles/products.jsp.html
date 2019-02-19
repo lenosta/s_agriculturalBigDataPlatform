@@ -1,0 +1,141 @@
+
+
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title>JSP 2.0 Examples - Display Products Tag File</title>
+  </head>
+  <body>
+    <h1>JSP 2.0 Examples - Display Products Tag File</h1>
+    <hr>
+    <p>This JSP page invokes a tag file that displays a listing of
+    products.  The custom tag accepts two fragments that enable
+    customization of appearance.  One for when the product is on sale
+    and one for normal price.</p>
+    <p>The tag is invoked twice, using different styles</p>
+    <hr>
+    <h2>Products</h2>
+    <!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+
+
+
+
+
+
+
+<table border="1">
+  <tr>
+    <td>
+      
+      
+      Item: Hand-held Color PDA<br/>
+        Price: $298.86
+    </td>
+    <td>
+      
+      
+      
+      Item: 4-Pack 150 Watt Light Bulbs<br/>
+        <font color="red"><strike>Was: $2.98</strike></font><br/>
+        <b>Now: $2.32</b>
+    </td>
+    <td>
+      
+      
+      Item: Digital Cellular Phone<br/>
+        Price: $68.74
+    </td>
+    <td>
+      
+      
+      Item: Baby Grand Piano<br/>
+        Price: $10,800.00
+    </td>
+    <td>
+      
+      
+      
+      Item: Luxury Car w/ Leather Seats<br/>
+        <font color="red"><strike>Was: $23,980.00</strike></font><br/>
+        <b>Now: $21,070.00</b>
+    </td>
+  </tr>
+</table>
+
+    <hr>
+    <h2>Products (Same tag, alternate style)</h2>
+    <!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+
+
+
+
+
+
+
+<table border="1">
+  <tr>
+    <td>
+      
+      
+      <b>Hand-held Color PDA</b> @ $298.86 ea.
+    </td>
+    <td>
+      
+      
+      
+      <b>4-Pack 150 Watt Light Bulbs</b> @ $2.32 ea. (was: $2.98)
+    </td>
+    <td>
+      
+      
+      <b>Digital Cellular Phone</b> @ $68.74 ea.
+    </td>
+    <td>
+      
+      
+      <b>Baby Grand Piano</b> @ $10,800.00 ea.
+    </td>
+    <td>
+      
+      
+      
+      <b>Luxury Car w/ Leather Seats</b> @ $21,070.00 ea. (was: $23,980.00)
+    </td>
+  </tr>
+</table>
+
+  </body>
+</html>

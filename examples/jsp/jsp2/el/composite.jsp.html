@@ -1,0 +1,97 @@
+
+
+
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title>JSP 2.0 Expression Language - Composite Expressions</title>
+  </head>
+  <body>
+    <h1>JSP 2.0 Expression Language - Composite Expressions</h1>
+    <hr>
+    This example illustrates EL composite expressions. Composite expressions
+    are formed by grouping together multiple EL expressions. Each of them is
+    evaluated from left to right, coerced to String, all those strings are
+    concatenated, and the result is coerced to the expected type.
+
+    
+
+    <blockquote>
+      <code>
+        <table border="1">
+          <thead>
+        <td><b>EL Expression</b></td>
+        <td><b>Type</b></td>
+        <td><b>Result</b></td>
+      </thead>
+      <tr>
+        <td>${'hello'} wo${'rld'}</td>
+        <td>String</td>
+        <td>hello world</td>
+      </tr>
+      <tr>
+        <td>${'hello'} wo${'rld'}</td>
+        <td>String</td>
+        <td>hello world</td>
+      </tr>
+      <tr>
+        <td>${1+2}.${220}</td>
+        <td>Double</td>
+        <td>3.22</td>
+      </tr>
+      <tr>
+        <td>${1+2}.${220}</td>
+        <td>Double</td>
+        <td>3.22</td>
+      </tr>
+      <tr>
+        <td>000${1}${7}</td>
+        <td>Long</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>000${1}${7}</td>
+        <td>Long</td>
+        <td>17</td>
+      </tr>
+      <!--
+         Undefined values are to be coerced to String, to be "",
+         https://bz.apache.org/bugzilla/show_bug.cgi?id=47413
+       -->
+      <tr>
+        <td>${undefinedFoo}hello world${undefinedBar}</td>
+        <td>String</td>
+        <td>hello world</td>
+      </tr>
+      <tr>
+        <td>${undefinedFoo}hello world${undefinedBar}</td>
+        <td>String</td>
+        <td>hello world</td>
+      </tr>
+      <tr>
+        <td>${undefinedFoo}${undefinedBar}</td>
+        <td>Double</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>${undefinedFoo}${undefinedBar}</td>
+        <td>Double</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>${undefinedFoo}${undefinedBar}</td>
+        <td>Long</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>${undefinedFoo}${undefinedBar}</td>
+        <td>Long</td>
+        <td>0</td>
+      </tr>
+    </table>
+      </code>
+    </blockquote>
+  </body>
+</html>
+

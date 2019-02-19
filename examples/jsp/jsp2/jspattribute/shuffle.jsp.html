@@ -1,0 +1,37 @@
+
+
+
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title>JSP 2.0 Examples - Shuffle Example</title>
+  </head>
+  <body>
+    <h1>JSP 2.0 Examples - Shuffle Example</h1>
+    <hr>
+    <p>Try reloading the page a few times.  Both the rows and the columns
+    are shuffled and appear different each time.</p>
+    <p>Here's how the code works.  The SimpleTag handler called
+    &lt;my:shuffle&gt; accepts three attributes.  Each attribute is a
+    JSP Fragment, meaning it is a fragment of JSP code that can be
+    dynamically executed by the shuffle tag handler on demand.  The
+    shuffle tag handler executes the three fragments in a random order.
+    To shuffle both the rows and the columns, the shuffle tag is used
+    with itself as a parameter.</p>
+    <hr>
+    <blockquote>
+     <font color="#ffffff">
+      <table>
+        <tr>
+              <td width="32" height="32" bgcolor="#ff0000"><font color="#ffffff"><center>A</center></font></td><td width="32" height="32" bgcolor="#00ff00"><font color="#ffffff"><center>B</center></font></td><td width="32" height="32" bgcolor="#0000ff"><font color="#ffffff"><center>C</center></font></td>
+            </tr><tr>
+              <td width="32" height="32" bgcolor="#00ff00"><font color="#ffffff"><center>@</center></font></td><td width="32" height="32" bgcolor="#ff0000"><font color="#ffffff"><center>!</center></font></td><td width="32" height="32" bgcolor="#0000ff"><font color="#ffffff"><center>#</center></font></td>
+            </tr><tr>
+              <td width="32" height="32" bgcolor="#0000ff"><font color="#ffffff"><center>3</center></font></td><td width="32" height="32" bgcolor="#00ff00"><font color="#ffffff"><center>2</center></font></td><td width="32" height="32" bgcolor="#ff0000"><font color="#ffffff"><center>1</center></font></td>
+            </tr>
+      </table>
+     </font>
+    </blockquote>
+  </body>
+</html>
