@@ -11,7 +11,7 @@ var excessivePestMonitor = function () {
     	option = {
 		    title : {
 		        text: '各省农药肥料使用情况',
-		        subtext: '九次方财富咨询',
+		        subtext: '',
 		        x:'center'
 		    },
 		    tooltip : {
@@ -153,7 +153,7 @@ var excessivePestMonitor = function () {
     	option = {
 		    title : {
 		        text: '病虫害危害TOP10地区',
-		        subtext: '九次方财富咨询',
+		        subtext: '',
 		        x:'center',
 		        y:'top'
 		    },
@@ -200,7 +200,7 @@ var excessivePestMonitor = function () {
     	option = {
 		    title : {
 		        text: '全国农业生产主要省份气象综合指数',
-		        subtext: '九次方财富咨询',
+		        subtext: '',
 		        x:'center',
 		        y:'top'
 		    },
@@ -307,7 +307,7 @@ var excessivePestMonitor = function () {
     	option = {
 		    title : {
 		        text: '全国主要省份农药使用量及残留量情况',
-		        subtext: '九次方财富咨询',
+		        subtext: '',
 		        x:'center'
 		    },
 		    tooltip : {

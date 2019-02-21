@@ -6,7 +6,7 @@ var agricEnterpSupport=function () {
        var option = {
             title : {
                 text: '企业评级',
-                subtext: '九次方财富咨询',
+                subtext: '',
                 sublink: 'http://www.jusfoun.com',
                 x:'center'
             },
@@ -750,7 +750,7 @@ var agricEnterpSupport=function () {
                 {
                     title : {
                         'text':name+'2002运营情况分析',
-                        subtext: '九次方财富咨询',
+                        subtext: '',
                         sublink: 'http://www.jusfoun.com'
                     },
                     tooltip : {'trigger':'axis'},
@@ -1275,7 +1275,7 @@ var agricEnterpSupport=function () {
                 {
                     title : {
                         'text':name+'2002发展潜力',
-                        subtext: '九次方财富咨询',
+                        subtext: '',
                         sublink: 'http://www.jusfoun.com'
                     },
                     tooltip : {'trigger':'axis'},
@@ -1530,7 +1530,7 @@ var agricEnterpSupport=function () {
         var option = {
                 title : {
                     text:name+ '本年度农企产品销量',
-                    subtext: '九次方财富咨询',
+                    subtext: '',
                     sublink: 'http://www.jusfoun.com',
                     x:'left',
                     y:'top'
